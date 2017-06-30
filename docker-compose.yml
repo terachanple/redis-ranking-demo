@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  api:
+    container_name: api
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      SERVER_PORT: 8080
+      REDIS_ADDR: redis:6379
+    depends_on:
+      - redis
+
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+      - 6379:6379

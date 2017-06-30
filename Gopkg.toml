@@ -1,0 +1,15 @@
+[[constraint]]
+  branch = "master"
+  name = "github.com/go-redis/redis"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/julienschmidt/httprouter"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/kelseyhightower/envconfig"
+
+[[constraint]]
+  branch = "master"
+  name = "go4.org"
